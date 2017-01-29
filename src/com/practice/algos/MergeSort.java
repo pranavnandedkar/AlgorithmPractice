@@ -9,13 +9,11 @@ public class MergeSort {
 			mergeSort(i, mid, a);
 		if(mid+1 != j)
 			mergeSort(mid+1, j, a);
-
 		merge(i,mid,j,a);
 	}
 
 
 	private static void merge(int i, int mid, int j, int[] a) {
-
 		int n1 = mid-i + 1;
 		int n2 = j-mid;
 		int[] L = new int[n1+1];
@@ -30,7 +28,6 @@ public class MergeSort {
 		}
 		int k=0;
 		int p=0;
-
 		for(int z=i; z<=j;z++){
 			if(L[k] < R[p]){
 				a[z]=L[k];
@@ -39,11 +36,7 @@ public class MergeSort {
 				a[z] = R[p];
 				p++;
 			}
-
 		}
-
-
-
 	}
 
 
@@ -52,15 +45,12 @@ public class MergeSort {
 		int[] a = new int[10];
 		Random r = new Random();
 		for(int i=0;i<a.length;i++){
-			a[i] = r.nextInt(100);
+			a[i] = r.nextInt(1000);
 		}
 		for(int i=0;i<a.length;i++){
 			System.out.print(a[i]+" ");
 		}		
-
-
 		mergeSort(0,a.length-1,a);
-
 		System.out.println("\nAnswer:--->\n");
 
 		for(int i=0;i<a.length;i++){
