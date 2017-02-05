@@ -1,4 +1,4 @@
-package com.practice.algos;
+package com.practice.algos.sorts;
 
 import java.util.Random;
 

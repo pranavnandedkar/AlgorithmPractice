@@ -1,4 +1,4 @@
-package com.practice.algos;
+package com.practice.algos.sorts;
 
 import java.util.Random;
 
@@ -23,6 +23,7 @@ public class SelectionSort {
 	public static void main(String[] args) {
 		try {
 
+			
 			int[] a = new int[10];
 			Random r = new Random();
 			for(int i=0;i<a.length;i++){
